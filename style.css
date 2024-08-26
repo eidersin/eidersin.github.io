@@ -1,0 +1,27 @@
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+.profile-container {
+  text-align: center;
+  padding-top: 20px;
+}
+.profile-img {
+  width: 280px;
+  height: 280px;
+  margin: auto;
+  border-radius: 180px;
+}
+.profile-name {
+  padding-top: 20px;
+}
+.skills-container {
+  padding-bottom: 20px;
+}
+.redes-sociais{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.w3-container {
+  margin-bottom: 20px;
+}
