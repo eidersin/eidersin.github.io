@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="w3-light-grey">
   <div class="w3-content w3-margin-top" style="max-width:1400px;">
     <div class="w3-row-padding">
@@ -29,7 +28,30 @@
               <div class="redes-sociais">
                 <a href="assets/Wanderson T.SOUSA.pdf" id="downloadLink" download class="btn">Baixar Currículo</a>
                 <a id="shareLink" class="btn" href="#">Compartilhar</a>
-              </div>
+            </div>
+            
+            <script>
+                // Atualiza a URL de compartilhamento
+                function updateShareLink() {
+                    const url = encodeURIComponent(window.location.href);
+                    const text = encodeURIComponent('Confira o currículo de Wanderson Teixeira Sousa!');
+                    
+                    // Configura o link para WhatsApp
+                    const whatsappLink = `https://wa.me/?text=${text}%20${url}`;
+                    
+                    // Atualiza o link de compartilhamento para WhatsApp
+                    document.getElementById('shareLink').href = whatsappLink;
+                    document.getElementById('shareLink').target = "_blank"; // Abre o WhatsApp em uma nova aba
+                }
+            
+                // Chama a função para atualizar o link de compartilhamento
+                document.addEventListener('DOMContentLoaded', function() {
+                    updateShareLink();
+                    updateStats(); // Chama a função para inicializar as estatísticas
+                });
+            </script>
+            
+            
             </div>
           </div>
           <hr>
